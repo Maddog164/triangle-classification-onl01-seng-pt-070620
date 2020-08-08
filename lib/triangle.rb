@@ -11,7 +11,9 @@ class Triangle
 
   def kind
     #binding.pry
-    if (@side_1 <= 0 || @side_2 <= 0 || @side_3<= 0)
+    if (@side_1 <= 0 || @side_2 <= 0 || @side_3<= 0) || 
+      (@side_1 + @side_2 <= @side_3) || ()@side_2 + @side_3 <= @side_1) ||
+      (@side_1 + @side_3 <= @side_2)
       # begin
         raise TriangleError
       # rescue TriangleError => error
